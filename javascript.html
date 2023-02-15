@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+
+    <title>Cheatsheet Template</title>
+</head>
+<body>
+    <nav>
+        <span class="logo"><img src="logo.jpg" alt=""></span>
+        <div class="content center">
+            THIS CHEATSHEET IS MADE FOR YOU!
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li>Writing JavaScript code in an HTML page:
+                <p>We must enclose the JavaScript code within the &lt;script&gt; tag in order to include it on an HTML page just as the example shown below</p>
+<pre class="language-html"><code>&lt;script type = "text/javascript"&gt;
+//JavaScript coding can be done inside this tag
+&lt;script&gt;
+</code></pre>
+            </li>
+            <li>Inclusion of external JavaScript files in an HTML file:
+                <p>An external JavaScript file can also be written separately and included within our HTML file. That way, different types of code can be kept isolated from one another, resulting in better-organised files. For instance, if our JavaScript code is written in the file script.js, we can include it in our HTML file in the following way:</p>
+                <pre class="language-html"><code>&lt;script src="script.js"&gt;&lt;script&gt;
+                </code></pre>
+            </li>
+            
+            <li>Javascript Variables
+                <p>Variables in JavaScript are simply names of storage locations. In other words, they can be considered as stand-in values that we can use to perform various operations in our JavaScript codes.</p>
+                <pre class="language-javascript"><code>var x = 140; 
+</code><p>The most commonly used variable in JavaScript is var. It can be redeclared and its value can be reassigned, but only inside the context of a function. When the JavaScript code is run, variables defined using var are moved to the top.</p></pre>
+                <pre class="language-javascript"><code>const x = 5;
+</code><p>const: const variables in JavaScript cannot be used before they appear in the code. They can neither be reassigned values, that is, their value remains fixed throughout the execution of the code, nor can they be redeclared.</p></pre>
+                <pre class="language-javascript"><code>let x = 202;
+</code><p>let: The let variable, like const, cannot be redeclared. But they can be reassigned a value. </p></pre>
+
+            </li>
+            
+            </code></pre>
+            </li>
+            <li>Javascript Data Types
+                
+                <pre class="language-javascript"><code>var id = 100
+</code><p>Numbers: These are just numerical values. They can be real numbers or integers.</p></pre>
+                <pre class="language-javascript"><code>var y
+</code><p>Variables</p></pre>
+                <pre class="language-javascript"><code>var demoString = "Hello World"
+</code><p>Text(Strings)</p></pre>
+                <pre class="language-javascript"><code>sum = 20 + 30 + 29
+</code><p>Operations</p></pre>
+                <pre class="language-javascript"><code>booleanValue = true
+</code><p>Boolean Values</p></pre>
+                <pre class="language-javascript"><code>const g = 9.8
+</code><p>Constant Numbers</p></pre>
+                <pre class="language-javascript"><code>var name = {name:"Jon Snow", id:"AS123"}
+</code><p>Objects</p></pre>
+            </li>
+            
+            </code></pre>
+            </li>
+            <li>Javascript Operators
+                <p>Fundamental Operators</p>
+                <pre class="language-javascript"><code>let x = 5;
+let y = 2;
+let z = x + y;
+</code><p>Addition Operator</p></pre>
+                <pre class="language-javascript"><code>let x = 5;
+let y = 2;
+let z = x - y;
+</code><p>Substraction Operator</p></pre>
+                <pre class="language-javascript"><code>let x = 5;
+let y = 2;
+let z = x * y;
+</code><p>Multiplication Operator</p></pre>
+                <pre class="language-javascript"><code>let x = 6;
+let y = 2;
+let z = x / y;
+</code><p>Division Operator</p></pre>
+                <pre class="language-javascript"><code>let x = 5;
+let y = 2;
+let z = x % y;
+</code><p>Modulas Operator</p></pre>
+                <pre class="language-javascript"><code>let x =2;
+x++;
+</code><p>Increment Operator</p></pre>
+                <pre class="language-javascript"><code>let x =2;
+x++;
+</code><p>Decrement Operator</p></pre>
+                <pre class="language-javascript"><code>let x = 5;
+let y = 2;
+let z = x ** y;
+</code><p>Exponential Operator</p></pre>
+                <p>Bitwise Operators</p>
+                <pre class="language-javascript"><code>let x = 5 & 1;
+</code><p>bitwise AND</p></pre>
+                <pre class="language-javascript"><code>let x = 5 | 1;
+</code><p>bitwise OR</p></pre>
+                <pre class="language-javascript"><code>let x = 5 ^ 1;
+</code><p>Bitwise XOR</p></pre>
+                <pre class="language-javascript"><code>let x = ~5;
+</code><p>Bitwise NOT</p></pre>
+                <pre class="language-javascript"><code>let x = 5 << 1;
+</code><p>Bitwise Left Shift</p></pre>
+                <pre class="language-javascript"><code>let x = -5 >> 1;
+</code><p>Bitwise Right Shift</p></pre>
+
+<p>Comparision Operators:Used to test true or false.</p>
+                <pre class="language-javascript"><code>x == 8
+</code><p>equal to</p></pre>
+                <pre class="language-javascript"><code>x === 8
+</code><p>equal value and equal type</p></pre>
+                <pre class="language-javascript"><code>x != 8
+</code><p>not equal</p></pre>
+                <pre class="language-javascript"><code>x !== 8
+</code><p>not equal value or not equal type</p></pre>
+                <pre class="language-javascript"><code>8 > 6
+</code><p>greater than</p></pre>
+                <pre class="language-javascript"><code>5 < 8
+</code><p>less than</p></pre>
+                <pre class="language-javascript"><code>8 >= 8
+</code><p>greater than or equal to</p></pre>
+                <pre class="language-javascript"><code>8 <= 9
+</code><p>less than or equal to</p></pre>
+
+<p>Logical Operator</p>
+                <pre class="language-javascript"><code>5 < 10 && 2 > 1
+</code><p>Logical AND</p></pre>
+                <pre class="language-javascript"><code>x == 5 || y == 5
+</code><p>Logical OR</p></pre>
+                <pre class="language-javascript"><code>!(9 == 8)
+</code><p>Logical NOT</p></pre>
+<li>               
+<p>JavaScript If-Else Statements</p><pre class="language-javascript"><code>
+</code><p>if (check condition) {
+    // block of code to be executed if the given condition is satisfied
+ } else {
+    // block of code to be executed if the given condition is not satisfied
+ }</p></pre>
+</li>     
+<li>Loops in javascript
+    
+    <pre class="language-javascript"><code>for (initialization of the loop variable; condition checking for the loop; updation after the loop) {
+        // code to be executed in loop
+    }      
+</code>
+<p>for loop</p></pre>
+    <pre class="language-javascript"><code>// Initialization of the loop variable is done before the while loop begins
+        while(condition checking for the loop){
+        // 1. code to be executed in loop
+        // 2. updation of the loop variable
+        }
+</code>
+<p>while loop</p></pre>
+    <pre class="language-javascript"><code>// Initialization of the loop variable is done before the do-while loop begins
+do{
+// 1. code to be executed in loop
+// 2. updation of the loop variable
+}while(condition checking for the loop);
+</code>
+<p>do-while loop</p></pre>
+<li>               
+<p>Arrays</p><pre class="language-javascript"><code>var cars = ["Mercedes", "Tesla","Volvo"];
+</code></pre>
+</li> 
+<li>               
+<p>Functions</p><pre class="language-javascript"><code>function nameOfTheFunction(parameterOne, parameterTwo, parameterThree, parameterFour,....,parameterN) {
+    // Job or Task of the function 
+ }
+</code></pre>
+</li>
+<li>Scope and Scope Chain in JavaScript
+    <dl>
+        <dt> Scope: The accessibility or visibility of variables in JavaScript is referred to as scope. That is, which sections of the program can access a given variable and where the variable can be seen. There are usually three types of scopes:</dt>
+            <dd>   
+    <pre class="language-javascript"><code>var hello = 'Hello!';
+function sayHello() {
+    console.log(hello);
+}
+// 'Hello!' gets logged
+sayHello();
+</code>
+<p>Global Scope</p></pre>
+</dd>
+<dd>
+    <pre class="language-javascript"><code>function sayHello() {
+var hello = 'Hello!';
+console.log(hello);
+}
+// 'Hello!' gets logged
+sayHello();
+</code>
+<p>Local or Function Scope</p></pre>
+</dd>
+<dd>
+    <pre class="language-javascript"><code>/{
+let hello = 'Hello!';
+var language = 'Hindi';
+console.log(hello); // 'Hello!' gets logged
+}
+console.log(language); // 'Hindi!' gets logged
+console.log(hello); // Uncaught ReferenceError: hello is not defined
+</code>
+<p>Block Scope</p></pre>
+</dd>
+</dl>
+<dl>
+    <dt> Scope Chain: When a variable is used in JavaScript, the JavaScript engine searches the current scope for the variable's value. If it can't find the variable in the inner scope, it will look into the outer scope until it finds it or reaches the global scope.</dt>
+        <dd>   
+<pre class="language-javascript"><code>let a = 'a';
+function foo() {
+let b = 'b';
+console.log(b); // 'b' gets logged
+console.log(a); // 'a' gets logged
+randomNumber = 33;
+console.log(randomNumber);  // 33 gets logged
+}
+foo();
+</code>
+</dd>
+</dl>
+<li>JavaScript Hoisting
+    
+    <pre class="language-javascript"><code>display("Lion");
+function display(inputString) {
+    console.log(inputString); // 'Lion' gets logged 
+}
+</code>
+<p>Function Hoisting</p></pre>
+    <pre class="language-javascript"><code>console.log(x) // 'undefined' is logged from hoisted var declaration (instead of 7)
+var x // Declaration of variable x
+x = 7; // Initialization of variable x to a value 7
+console.log(x); // 7 is logged post the line with initialization's execution.
+</code>
+<p>Variable Hoisting</p></pre>
+<li>JavaScript Closures
+        <p>We must enclose the JavaScript code within the &lt;script&gt; tag in order to include it on an HTML page just as the example shown below</p>
+<pre class="language-javascript"><code>function subtractor(subtractingInteger) {
+return function(a) {
+    return a - subtractingInteger;
+};
+}
+var subtract2 = subtractor(2);
+var subtract5 = subtractor(5);
+console.log(subtract2(5));  // 3 is logged
+console.log(subtract5(5)); // 0 is logged
+</code></pre>
+</li>
+
+
+          
+        </ol>
+    </div>
+</body>
+<footer>
+    <p>Copyright &copy; Made by sinhapalak </p>
+  </footer>
+</html>
