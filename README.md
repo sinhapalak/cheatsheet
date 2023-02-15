@@ -1,3 +1,3 @@
 # cheatsheet
-This repository contains a basic HTML Cheatsheet.
+This repository contains a basic HTML and Javascript Cheatsheet.
 Fell free to contribute to this cheatsheet.
